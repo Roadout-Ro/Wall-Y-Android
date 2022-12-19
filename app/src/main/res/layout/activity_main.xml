@@ -57,12 +57,15 @@
         android:id="@+id/textView9"
         android:layout_width="185dp"
         android:layout_height="33dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/sfpro_bold"
         android:text="Spending Stats"
         android:textColor="#000000"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="442dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView7"
@@ -112,6 +115,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
+        android:id="@+id/textView11"
+        android:layout_width="166dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -141,5 +154,55 @@
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6"
         app:srcCompat="@drawable/minus" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        app:srcCompat="@drawable/home__2_" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        app:srcCompat="@drawable/icons8_engineering_90_1" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="38dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="34dp"
+        android:fontFamily="@font/sfpro_medium"
+        android:text="Home"
+        android:textColor="#4C243B"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="49dp"
+        android:layout_height="17dp"
+        android:fontFamily="@font/sfpro_medium"
+        android:text="Settings"
+        android:textColor="#ABABAB"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
